@@ -40,4 +40,14 @@ public class Recursividad {
         }
         return numero % 10 + sumaDigitos(numero / 10);
     }
+    //contar digitos en un numero
+    //si mando 456 es igual a 3
+    public int contarDigitos(int numero) {
+        System.out.println("Calculando la cantidad de digitos de " + numero);
+        if (numero == 0) {
+            System.out.println("Caso base alcanzado la cantidad de digitos de " + numero + " es 1");
+            return 0;
+        }
+        return 1 + contarDigitos(numero / 10);
+    }
 }

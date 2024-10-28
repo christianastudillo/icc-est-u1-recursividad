@@ -25,5 +25,11 @@ public class App {
         System.out.println(" ");
         System.out.println("******************************************");
         System.out.println(" ");
+        
+        int contarDigitosResult = rec.contarDigitos(1234);
+        System.out.println("El número de dígitos es: " + contarDigitosResult);
+        System.out.println(" ");
+        System.out.println("******************************************");
+        System.out.println(" ");
     }
 }

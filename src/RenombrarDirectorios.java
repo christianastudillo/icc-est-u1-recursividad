@@ -18,7 +18,14 @@ public class RenombrarDirectorios {
             return;
         }
         for (File directorArchivo : directoriosArchivosInternos) {
-            if(directorioArchivo.isDirectory)
-
+            if(directorArchivo.isDirectory()){
+                String nombreoriginal = directorArchivo.getName();
+                String nuevoNombre = "Nuevo - " + nombreoriginal;
+                File nuevoDirectorio = new File(directorArchivo.getParent(), nuevoNombre);
+                directorArchivo.renameTo(nuevoDirectorio);
+                System.out.println("El directorio " + nombreoriginal + " ha sido renombrado a " + nuevoNombre);
+                
+            }
+        }
     }
 }

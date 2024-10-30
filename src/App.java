@@ -31,5 +31,14 @@ public class App {
         System.out.println(" ");
         System.out.println("******************************************");
         System.out.println(" ");
+        
+        int fibonacciResult = rec.fibonacci(9);
+        System.out.println("El resultado de la serie de Fibonacci es: " + fibonacciResult);
+        System.out.println(" ");
+        System.out.println("******************************************");
+        System.out.println(" ");
+
+        RenombrarDirectorios rd = new RenombrarDirectorios();
+        rd.RenombrarDirectorios("src/directorios/carpeta1");
     }
 }
